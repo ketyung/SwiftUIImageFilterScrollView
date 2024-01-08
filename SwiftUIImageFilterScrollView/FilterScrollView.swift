@@ -61,6 +61,11 @@ extension FilterScrollView {
                 filter = CIFilter(name: "CISepiaTone")!
             case .blackAndWhite:
                 filter = CIFilter(name: "CIColorMonochrome")!
+            
+                // addtional parameters for the fix for the real black and white
+                filter.setValue(CIColor(red: 0.6, green: 0.6, blue: 0.6), forKey: kCIInputColorKey) // Set to pure black
+                filter.setValue(1.0, forKey: kCIInputIntensityKey) // Full intensity for black-and-white
+              
             case .vignette:
                 filter = CIFilter(name: "CIVignette")!
             case .chrome:
