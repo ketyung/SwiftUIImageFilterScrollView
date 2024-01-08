@@ -14,6 +14,12 @@
 		105A019A2B4B96B8006A5307 /* SwiftUIImageFilterScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01992B4B96B8006A5307 /* SwiftUIImageFilterScrollViewTests.swift */; };
 		105A01A42B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01A32B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITests.swift */; };
 		105A01A62B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01A52B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITestsLaunchTests.swift */; };
+		105A01B32B4B96D7006A5307 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01B22B4B96D7006A5307 /* FilterView.swift */; };
+		105A01B52B4B96ED006A5307 /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01B42B4B96ED006A5307 /* FilterOption.swift */; };
+		105A01B72B4B9725006A5307 /* FilterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01B62B4B9725006A5307 /* FilterScrollView.swift */; };
+		105A01B92B4B9B02006A5307 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01B82B4B9B02006A5307 /* TestView.swift */; };
+		105A01BB2B4B9BE0006A5307 /* Mindfulness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 105A01BA2B4B9BE0006A5307 /* Mindfulness.jpeg */; };
+		105A01BD2B4BA4E1006A5307 /* ImagePickerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105A01BC2B4BA4E1006A5307 /* ImagePickerViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		105A019F2B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIImageFilterScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		105A01A32B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageFilterScrollViewUITests.swift; sourceTree = "<group>"; };
 		105A01A52B4B96B8006A5307 /* SwiftUIImageFilterScrollViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIImageFilterScrollViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		105A01B22B4B96D7006A5307 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		105A01B42B4B96ED006A5307 /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
+		105A01B62B4B9725006A5307 /* FilterScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterScrollView.swift; sourceTree = "<group>"; };
+		105A01B82B4B9B02006A5307 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		105A01BA2B4B9BE0006A5307 /* Mindfulness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mindfulness.jpeg; sourceTree = "<group>"; };
+		105A01BC2B4BA4E1006A5307 /* ImagePickerViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +108,13 @@
 			children = (
 				105A01882B4B96B6006A5307 /* SwiftUIImageFilterScrollViewApp.swift */,
 				105A018A2B4B96B6006A5307 /* ContentView.swift */,
+				105A01B22B4B96D7006A5307 /* FilterView.swift */,
+				105A01B62B4B9725006A5307 /* FilterScrollView.swift */,
+				105A01B82B4B9B02006A5307 /* TestView.swift */,
+				105A01BC2B4BA4E1006A5307 /* ImagePickerViewRepresentable.swift */,
+				105A01B42B4B96ED006A5307 /* FilterOption.swift */,
 				105A018C2B4B96B8006A5307 /* Assets.xcassets */,
+				105A01BA2B4B9BE0006A5307 /* Mindfulness.jpeg */,
 				105A018E2B4B96B8006A5307 /* Preview Content */,
 			);
 			path = SwiftUIImageFilterScrollView;
@@ -233,6 +251,7 @@
 			files = (
 				105A01902B4B96B8006A5307 /* Preview Assets.xcassets in Resources */,
 				105A018D2B4B96B8006A5307 /* Assets.xcassets in Resources */,
+				105A01BB2B4B9BE0006A5307 /* Mindfulness.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105A01B92B4B9B02006A5307 /* TestView.swift in Sources */,
+				105A01B72B4B9725006A5307 /* FilterScrollView.swift in Sources */,
+				105A01B52B4B96ED006A5307 /* FilterOption.swift in Sources */,
 				105A018B2B4B96B6006A5307 /* ContentView.swift in Sources */,
+				105A01BD2B4BA4E1006A5307 /* ImagePickerViewRepresentable.swift in Sources */,
+				105A01B32B4B96D7006A5307 /* FilterView.swift in Sources */,
 				105A01892B4B96B6006A5307 /* SwiftUIImageFilterScrollViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

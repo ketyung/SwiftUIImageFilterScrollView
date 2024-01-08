@@ -8,14 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isImagePickerPresented = false
+        
+    @State private var selectedImage: UIImage? = nil
+
+    @State private var filteredImage: UIImage? = nil
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        // TestView()
+        
+        VStack(spacing:10) {
+            if let image = filteredImage ?? selectedImage {
+                VStack(spacing: 10) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300, height: 300)
+
+                    if let sImage = selectedImage {
+                    
+                        FilterScrollView(
+                            inputImage: sImage,
+                            filteredImageHandler: { filteredImage in
+                                // Capture the filtered image and update the UI
+                                self.filteredImage = filteredImage
+                            }
+                        )
+                    }
+                    
+                    
+                }
+            }
+            Button("Select An Image") {
+                selectedImage = nil
+                isImagePickerPresented = true
+            }
         }
-        .padding()
+        .sheet(isPresented: $isImagePickerPresented) {
+            ImagePickerViewRepresentable(selectedImage: $selectedImage)
+        }
+        
+        
     }
 }
 
