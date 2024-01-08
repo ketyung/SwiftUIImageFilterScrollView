@@ -40,8 +40,9 @@ struct ContentView: View {
                 }
             }
             Button("Select An Image") {
-                selectedImage = nil
                 isImagePickerPresented = true
+                selectedImage = nil
+                filteredImage = nil
             }
         }
         .sheet(isPresented: $isImagePickerPresented) {
